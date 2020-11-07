@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" media="all" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <title>Portfolio/Johanna Vuorinen</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="topmenu">
+        <a href="./index.html">
+          <i class="glyphicon glyphicon-home"></i> MINÄ</a>
+        <a class="active" href="./ohjelmointiprojektit.html">
+          <i class="glyphicon glyphicon-th-large"></i> OHJELMOINTIPROJEKTIT</a>
+        <a href="./erityisosaaminen.html">
+          <i class="glyphicon glyphicon-star"></i> ERITYISOSAAMINEN</a>
+        <a href="./yhteys.html">
+          <i class="glyphicon glyphicon-envelope"></i> YHTEYS</a>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="header-image projectspic">
+      <div class="header-text">
+        <h1>Ohjelmointiprojektit</h1>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <main>
+        <!-- sidebar -->
+        <div class="column left">
+          <div class="sidebar">
+            <a class="active" href="#home">Frontend-ohjelmointi</a>
+            <hr />
+            <a href="#fullstack">Full stack-ohjelmointi</a>
+            <hr />
+            <a href="#java">Java</a>
+            <hr />
+            <a href="#design">Design</a>
+            <hr />
+            <a href="#playground">Playground</a>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="column right">
+          <div class="project-row">
+            <h2 id="home">Frontend-ohjelmointi</h2>
+            <div class="project-field">
+              <div class="project-column">
+                <div class="content">
+                  <h3>Otto Ohjelmoija -sivusto</h3>
+                  <a
+                    href="https://jxvuorinen.github.io/Otto-Ohjelmoija/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/Otto.png"
+                      alt="esikatselu Otto Ohjelmoija -sivustosta"
+                    />
+                  </a>
+                  <p>
+                    Frontend-ohjelmoinnin opintojakson harjoitustyö:
+                    kuvitteellisen yrityksen nettisivusto.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h2 id="fullstack">Full stack -ohjelmointi</h2>
+            <div class="project-field">
+              <div class="project-column">
+                <div class="content">
+                  <h3>Phonebook reactilla</h3>
+                  <a
+                    href="https://first-react-app-phonebook.herokuapp.com/"
+                    target="_blank">
+                    <img
+                      src="./images/phonebook.png"
+                      alt="ensimmäisen react-appin esikatselukuva"
+                    />
+                  </a>
+                  <p>
+                    Full Stack Open 2020 -opintojakson ensimmäinen harjoitustyö: puhelinluettelo.
+                  </p>
+                </div>
+              </div>
+              <div class="project-column">
+                <div class="content">
+                  <h3>Blogilista</h3>
+                  <a
+                    href="https://github.com/jxvuorinen/blogApp_React/"
+                    target="_blank"
+                    ><img
+                      src="./images/blogApp.png"
+                      alt="blogilista-appin esikatselu"
+                  /></a>
+                  <p>
+                    Full Stack Open 2020 -opintojakson harjoitustyö:
+                    blogilista-sovellus kirjautumisella.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h2 id="java">Java</h2>
+            <div class="project-field">
+              <div class="project-column">
+                <div class="content">
+                  <h3>Asiakastyö</h3>
+                    <video width="350" controls>
+                      <source src="./videos/AsPreviewVideo.mp4" type="video/mp4">
+                        Selaimesi ei tue HTML5 videota.
+                    </video>
+                  <p>
+                    Oma harjoitusprojekti Javalla, taustalla SQL-tietokanta. 
+                    <a href="https://github.com/jxvuorinen/AsiakastyoTietokanta">Linkki projektin GitHub-repositorioon</a>
+                  </p>
+                </div>
+              </div>
+              <div class="project-column">
+                <div class="content">
+                  <h3>Opiskelijat</h3>
+                  <video width="350" controls>
+                    <source src="./videos/OpPreviewVideo.mp4" type="video/mp4">
+                      Selaimesi ei tue HTML5 videota.
+                  </video>
+                  <p>Java-opintojakson harjoitustyö: opiskelijatietokanta.
+                    <a href="https://github.com/jxvuorinen/Opiskelijatietokanta/"
+                    target="_blank">Tästä projektin GitHub-repositorioon</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h2 id="design">Design</h2>
+            <div class="project-field">
+              <div class="project-column">
+                <div class="content">
+                  <h3>Anssi-asiointilaite</h3>
+                  <img
+                      src="./images/anssi.png"
+                      alt="kuva tabletista, näytöllä lukee Anssi"
+                      height="60%"
+                  />
+                  <p>
+                    Digitaalisen muotoilun design sprintissä suunniteltu prototyyppi 
+                    ikäihmisille suunnatusta asiointilaitteesta päivittäisten asioiden hoitamiseen.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h2 id="playground">Playground</h2>
+            <div class="project-field">
+              <div class="project-column">
+                <div class="content">
+                  <h3>Sokkelo</h3>
+                  <a href="https://github.com/jxvuorinen/GMS2-Maze" target="_blank">
+                    <img src="./images/sokkelo.png"
+                      alt="sokkelopelikuva Game Maker Studio 2:lla"></a>
+                  <p>
+                    Tuttavan ideoima Game Maker Studio 2:lla tehty sokkelopeli. * kesken *
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <p>&copy;Johanna Vuorinen 2020</p>
+      <p>
+      <a href="mailto:jxvuorinen@gmail.com" target="_blank"><i class="glyphicon glyphicon-envelope"></i></a>
+      <a href="https://github.com/jxvuorinen" target="_blank"><i class="glyphicon glyphicon-globe"></i></a>
+      <a href="https://www.linkedin.com/in/johanna-vuorinen-242396192/" target="_blank"><i class="glyphicon glyphicon-user"></i></a>
+      </p>
+    </footer>
+  </body>
+</html>

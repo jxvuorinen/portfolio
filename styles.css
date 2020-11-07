@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #595959;
+  position: relative;
+  padding-bottom: 52px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 0 30px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #595959;
+  margin: 10px;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+
+h5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+i {
+  color: #290122;
+}
+
+/* Clear floats after the columns */
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Menu */
+
+.topmenu {
+  overflow: hidden;
+  position: fixed;
+  z-index: 3;
+  background-color: rgb(240, 240, 250);
+  width: 100%;
+}
+
+.topmenu a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.topmenu a:hover {
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+.topmenu a.active {
+  background-color: gainsboro;
+  color: black;
+}
+
+/* Header */
+
+.frontpagepic {
+  background: url(./images/homeHeader.jpg) top center no-repeat;
+}
+
+.projectspic {
+  background: url(./images/pitkospuut.jpg) top center no-repeat;
+}
+
+.special-skillpic {
+  background: url(./images/river.jpg) top center no-repeat;
+}
+
+.contactpic {
+  background: url(./images/contact.jpg) top center no-repeat;
+}
+
+.header-image {
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.header-text {
+  background-color: rgba(0, 0, 0, 0.363);
+  position: absolute;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: honeydew;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text:hover {
+  background-color: black;
+  transition: 0.9s;
+}
+
+/* Main-content layout */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 65%;
+  margin-bottom: 50px;
+}
+
+/* Left-side container/info */
+
+.title {
+  color: rgba(0, 0, 0, 0.726);
+  font-size: 18px;
+}
+
+.intro {
+  text-align: center;
+}
+
+#profiilikuva {
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 80%;
+  margin: 5px;
+}
+
+.infocard-container {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  overflow: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.skills-container {
+  width: 60%;
+  background-color: lightgray;
+  border-radius: 16px;
+  margin: auto;
+}
+
+.skills {
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.html {
+  width: 85%;
+  background-color: #290122;
+}
+
+.javascript {
+  width: 65%;
+  background-color: #290122;
+}
+
+.react {
+  width: 55%;
+  background-color: #290122;
+}
+
+.java {
+  width: 70%;
+  background-color: #290122;
+}
+
+.node {
+  width: 35%;
+  background-color: #290122;
+}
+
+.sql {
+  width: 35%;
+  background-color: #290122;
+}
+
+.wordpress {
+  width: 50%;
+  background-color: #290122;
+}
+
+.design {
+  width: 45%;
+  background-color: #290122;
+}
+
+.checked {
+  color: orange;
+}
+
+#language p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* Right-side container */
+
+.work-edu-container,
+.projects-container,
+.contact-card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  overflow: auto;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+caption {
+  color: black !important;
+}
+
+#trainees th {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+#trainees td {
+  padding-right: 8px;
+}
+
+hr {
+  width: 90%;
+}
+
+.project-row {
+  background-color: #f1f1f1;
+  margin: 8px -16px;
+  padding-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* Project-gallery */
+/* Add padding BETWEEN each column */
+.row,
+.project-row .project-column {
+  padding: 10px;
+}
+
+.project-column {
+  float: left;
+  width: 50%;
+  display: flex;
+}
+
+.project-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-field {
+  content: "";
+  display: flex;
+  clear: both;
+  flex-flow: row wrap;
+}
+
+.content {
+  padding: 10px;
+  background-color: white;
+  flex: 1;
+}
+
+.content a {
+  text-decoration: underline;
+}
+
+.content img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.content li {
+  list-style-type: none;
+}
+
+.content img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* sidebar */
+
+.sidebar {
+  top: 40px;
+  position: fixed;
+  max-width: 20%;
+  background-color: rgba(90, 88, 88, 0.075);
+  height: fit-content;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+  padding: 20px;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.sidebar hr {
+  width: auto;
+  margin: 0;
+}
+
+.sidebar a:hover {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.589);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+/* Contact-card/form */
+
+.contact-card li {
+  list-style-type: none;
+  text-align: left;
+  font-size: 20px;
+}
+
+.contact-card {
+  margin: 0 20%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  overflow: auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #f1f1f1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #009688;
+  color: whitesmoke;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 60%;
+  margin: 0% 20%;
+}
+
+.col-15 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col-85 {
+  float: left;
+  width: 85%;
+  margin-top: 6px;
+}
+
+.form-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.363);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.footer i {
+  color: black;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  nav,
+  main {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-column {
+    height: auto;
+    width: 100%;
+  }
+
+  .sidebar a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  video {
+    max-width: 100%;
+  }
+
+  .left {
+    width: fit-content;
+  }
+
+  .right {
+    width: fit-content;
+  }
+
+  .header-text h1 {
+    font-size: 34px;
+  }
+
+  .sidebar {
+    visibility: hidden;
+  }
+
+  .intro h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    top: 80px;
+  }
+
+  .sidebar a {
+    font-size: 10px;
+    letter-spacing: normal;
+    padding-left: 3px;
+    margin-right: 3px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  #trainees td,
+  th {
+    text-align: left;
+    font-size: 8px;
+    padding-right: 5px;
+  }
+
+  .col-15,
+  .col-85,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .form-container,
+  .contact-card {
+    margin: 0;
+    width: 100%;
+  }
+}
