@@ -147,7 +147,7 @@ video {
 
 .title {
   color: rgba(0, 0, 0, 0.726);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .intro {
@@ -262,11 +262,11 @@ caption {
 }
 
 hr {
-  width: 90%;
+  width: 100%;
 }
 
 .project-row {
-  background-color: #f1f1f1;
+  background-color: #eab586;
   margin: 8px -16px;
   padding-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -467,22 +467,14 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
-  .sidebar a {
-    font-size: 12px;
+  .infocard-container h2 {
+    font-size: 18px;
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 760px) {
   video {
     max-width: 100%;
-  }
-
-  .left {
-    width: fit-content;
-  }
-
-  .right {
-    width: fit-content;
   }
 
   .header-text h1 {
@@ -492,34 +484,40 @@ input[type="submit"]:hover {
   .sidebar {
     visibility: hidden;
   }
-
-  .intro h2 {
-    font-size: 20px;
-  }
 }
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 1000px) {
   .sidebar {
     width: 100%;
     height: auto;
     top: 80px;
   }
 
-  .sidebar a {
-    font-size: 10px;
-    letter-spacing: normal;
-    padding-left: 3px;
-    margin-right: 3px;
+  .info {
+    width: fit-content;
+    text-align: center;
   }
 
-  .title {
-    font-size: 12px;
+  .right {
+    width: fit-content;
+  }
+
+  .left {
+    width: fit-content;
+  }
+
+  .infocard-container h2 {
+    font-size: 30px;
+  }
+  
+  .infocard-container .title {
+    font-size: 26px;
   }
 
   #trainees td,
   th {
     text-align: left;
-    font-size: 8px;
+    font-size: 14px;
     padding-right: 5px;
   }
 
