@@ -198,17 +198,17 @@ video {
 }
 
 .javascript {
-  width: 65%;
+  width: 60%;
   background-color: #290122;
 }
 
 .react {
-  width: 55%;
+  width: 65%;
   background-color: #290122;
 }
 
 .java {
-  width: 70%;
+  width: 60%;
   background-color: #290122;
 }
 
@@ -260,6 +260,11 @@ video {
 }
 caption {
   color: black !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
 #trainees th {
@@ -318,7 +323,7 @@ hr {
 }
 
 .content img {
-  width: 100%;
+  max-width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
