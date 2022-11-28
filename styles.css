@@ -265,6 +265,8 @@ caption {
 table {
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
+  overflow-x: auto;
 }
 
 #trainees th {
