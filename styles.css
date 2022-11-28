@@ -270,6 +270,7 @@ table {
 #trainees th {
   padding-bottom: 10px;
   text-align: left;
+  width: 30%;
 }
 
 #trainees td {
@@ -532,7 +533,7 @@ input[type="submit"]:hover {
   #trainees td,
   th {
     text-align: left;
-    font-size: 14px;
+    font-size: 10px;
     padding-right: 5px;
   }
 
